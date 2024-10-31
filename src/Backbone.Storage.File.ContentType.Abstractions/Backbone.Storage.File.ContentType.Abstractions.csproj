@@ -5,12 +5,12 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <Title>WoW2.Backbone.Storage.File.Abstractions</Title>
-        <PackageId>WoW2.Backbone.Storage.File.Abstractions</PackageId>
-        <Description>Provides abstractions for file storage</Description>
+        <Title>WoW2.Backbone.Storage.File.ContentType.Abstractions</Title>
+        <PackageId>WoW2.Backbone.Storage.File.ContentType.Abstractions</PackageId>
+        <Description>Provides abstractions for file content type management</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageTags>file-storage, abstractions, storage, file</PackageTags>
-        <Version>8.0.0-alpha.1</Version>
+        <PackageTags>file-storage, content-type, abstractions, storage, file</PackageTags>
+        <Version>8.0.0-alpha.0</Version>
         <Authors>WoW 2.0 Team</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/WoW-2-0-Backbone/Backbone.Storage.File</PackageProjectUrl>
@@ -23,5 +23,5 @@
         <None Include="wow2.png" Pack="true" PackagePath=""/>
         <None Include="README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
-    
+
 </Project>

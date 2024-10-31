@@ -1,3 +1,3 @@
-## Text Completion Abstractions
+## File Storage Abstractions
 
-This package contains entity cached repository base extending repository base for EF Core.
+This package contains file storage abstractions.
