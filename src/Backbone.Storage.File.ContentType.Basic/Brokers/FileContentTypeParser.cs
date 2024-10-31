@@ -8,6 +8,7 @@ namespace Backbone.Storage.File.ContentType.Basic.Brokers;
 /// </summary>
 public class FileContentTypeParser(IFileContentTypeProvider fileContentTypeProvider) : IFileContentTypeParser
 {
+    /// <inheritdoc />
     public (FileContentTypeInfo? FileInfo, bool IsValid) GetFileInfo(string fileName, string contentType)
     {
         var fileExtension = Path.GetExtension(fileName)?.TrimStart('.') ?? string.Empty;

@@ -19,31 +19,37 @@ public class FileContentTypeProvider : IFileContentTypeProvider
             .ToList();
     }
 
+    /// <inheritdoc />
     public IReadOnlyCollection<FileContentTypeInfo> GetAll()
     {
         return _fileContentInfos;
     }
 
+    /// <inheritdoc />
     public IReadOnlyCollection<FileContentTypeInfo> GetByCategory(FileContentCategories category)
     {
         return _fileContentInfos.Where(fileContentType => fileContentType.Category == category).ToList().AsReadOnly();
     }
 
+    /// <inheritdoc />
     public IReadOnlyCollection<FileContentTypeInfo> GetByType(FileContentTypes fileContentType)
     {
         return _fileContentInfos.Where(fileContentTypeInfo => fileContentTypeInfo.Type == fileContentType).ToList().AsReadOnly();
     }
 
+    /// <inheritdoc />
     public IReadOnlyCollection<FileContentTypeInfo> GetByContentType(string contentType)
     {
         return _fileContentInfos.Where(fileContentTypeInfo => fileContentTypeInfo.ContentType == contentType).ToList().AsReadOnly();
     }
 
+    /// <inheritdoc />
     public IReadOnlyCollection<FileContentTypeInfo> GetByExtension(string extension)
     {
         return _fileContentInfos.Where(fileContentTypeInfo => fileContentTypeInfo.Extension == extension).ToList().AsReadOnly();
     }
-
+    
+    /// <inheritdoc />
     public bool CheckIfInSameCategory(FileContentTypes contentTypeA, FileContentTypes contentTypeB)
     {
         var contentTypeInfoA = _fileContentInfos.First(fileContentTypeInfo => fileContentTypeInfo.Type == contentTypeA);
